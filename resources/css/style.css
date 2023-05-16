@@ -1,11 +1,25 @@
+/* 폰트 */
+@font-face {
+  font-family: "H";
+  src: url("../font/Black_Han_Sans/BlackHanSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "G";
+  src: url("../font/GmarketSansTTF/GmarketSansTTFMedium.ttf");
+}
+
+/* 기본 세팅 */
+
 * {
   margin: 0;
   padding: 0;
   letter-spacing: -1px;
   box-sizing: border-box;
+  font-family: "H";
 }
 
 a {
   color: inherit;
-  text-decoration: none; 
+  text-decoration: none;
 }
