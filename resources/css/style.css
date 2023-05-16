@@ -169,3 +169,26 @@ canvas{z-index:10;pointer-events: none;position: fixed;top: 0;transform: scale(1
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* 모바일 */
+
+@media (max-width: 480px) {
+  .mainVisual {
+    padding: 0;
+  }
+  .imgs > div:nth-child(2) {
+    margin: 0;
+  }
+
+  .title > .HBD > h3 {
+    font-size: 3rem;
+  }
+  .title > .HBD > p {
+    font-size: 20px;
+  }
+
+  .box {
+    padding: 0 .5rem;
+    gap: 7px;
+  }
+}
