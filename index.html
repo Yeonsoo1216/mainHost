@@ -15,8 +15,113 @@
 </head>
 <body>
 
-  <div>안녕하세요</div>
+  <canvas id="canvas"></canvas>
 
+  <div class="mainVisual" id="main">
+    <img src="resources/img/KakaoTalk_20230516_203714051.png" alt="">
+  </div>
+
+  <div class="wrap">
+
+
+    <div class="title">
+      <div class="hbd">
+        <h3>05월 16일</h3>
+        <h3>폐하의 탄신일</h3>
+      </div>
+
+      <div class="cw">
+        <p>天王陛下万歳</p>
+        <p>덴노 헤이카 반자이</p>
+      </div>
+    </div>
+
+    <div class="section">
+
+      <div class="imgs">
+
+        <div>
+          <img src="resources/img/1.jpg" alt="w1">
+        </div>
+
+        <div>
+          <img src="resources/img/2.jpg" alt="w2">
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="wrap last">
+    <div class="title">
+      <div class="HBD">
+        <h3>HAPPY BIRTH DAY</h3>
+        <p>축하한다잉 이원준상 <span class="H">+110D</span></p>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div class="last_img">
+        <img src="resources/img/3.jpg" alt="w3">
+      </div>
+
+      <div class="box">
+        <div><img src="resources/img/4.jpg" alt="w3"></div>
+        <div><img src="resources/img/5.jpg" alt="w3"></div>
+        <div><img src="resources/img/6.jpg" alt="w3"></div>
+        <div><img src="resources/img/7.jpg" alt="w3"></div>
+        <div><img src="resources/img/8.jpg" alt="w3"></div>
+        <div><img src="resources/img/9.jpg" alt="w3"></div>
+        <div><img src="resources/img/10.jpg" alt="w3"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="wrap last lastlast">
+    <div class="title">
+      <div class="HBD"><h3>LAST PRESENT</h3></div>
+    </div>
+
+    <div class="section gift">
+
+      <a href="#main" class="circle">
+        <i class="fa fa-gift"></i>
+      </a>
+
+    </div>
+
+  </div>
 
 </body>
+<a href="https://www.mma.go.kr/contents.do?mc=mma0000728" class="gun"></a>
+<button hidden class="canvasBtn" id="stopButton">1</button>
+<button hidden class="canvasBtn" id="startButton">2</button>
+
+<script src="https://tistory4.daumcdn.net/tistory/3134841/skin/images/confetti_v2.js"></script>
+
+<script>
+  $(document).ready(function(){  
+    //티스토리 공감버튼 이벤트
+    function reAction(){
+      $("#startButton").trigger("click");
+      setTimeout(function(){
+        $("#stopButton").trigger("click");
+      }, 6000);
+    }
+    
+    $(".circle").on('click', function(){
+      reAction();
+      setTimeout(function() {
+        $('.gun')[0].click();
+      }, 6000)
+    }); 
+  });
+  </script>
+
 </html>
